@@ -10,45 +10,190 @@
 
 <body>
     <header>
-        <h1>table</h1>
+        <h1 id="home">table</h1>
         <nav>
-            <a href="home">home</a>
-            <a href="form">form</a>
-            <a href="table">table</a>
+            <a href="#home">home</a>
+            <a href="#result">result</a>
+            <a href="form.html">form</a>
         </nav>
     </header>
     <main>
         <div class="box">
-            <div class="item1"></div>
+            <div class="item1"><input type="file" name="profile-pic" value="pic"></div>
+
             <div class="item2"></div>
         </div>
+        <div class="result">
+            <table>
+                <h1 id="result">result</h1>
+                <tr>
+
+                    <th>Subject</th>
+                    <th>theory</th>
+                    <th>practical</th>
+                    <th>total marks</th>
+                    <th>Grades</th>
+                </tr>
+                <tr>
+                    <th>english</th>
+                    <td></td>
+                    <td></td>
+                    <td>50</td>
+                    <td>90</td>
+
+                </tr>
+                <tr>
+                    <th>math</th>
+                    <td></td>
+                    <td></td>
+                    <td>60</td>
+                    <td>80</td>
+
+                </tr>
+                <tr>
+                    <th>science</th>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>50</td>
+                    <td>90</td>
+
+                </tr>
+                <tr>
+                    <th>social</th>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>50</td>
+                    <td>90</td>
+
+
+                </tr>
+
+            </table>
+        </div>
+
+
     </main>
+
+    <ol>
+        <li>organize</li>
+        <li> get into the table</li>
+        <li>let use it</li>
+        <li> fram</li>
+    </ol>
+    <p>&copy; 2020</p>
+
 </body>
 
 </html>
 <style>
+    body {
+        background: rgb(185, 180, 181);
+        background: radial-gradient(circle, rgba(185, 180, 181, 1) 17%, rgba(142, 135, 134, 1) 81%, rgba(213, 199, 203, 1) 99%, rgba(64, 55, 49, 1) 100%);
+    }
+    
+    header {
+        background-color: gray;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    nav {
+        text-indent: 20px;
+        background-color: black;
+        padding: 10px;
+        margin: 1px;
+        border-radius: 10px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    nav a:hover {
+        color: red;
+        text-decoration: none;
+    }
+    
     .box {
-        width: 500px;
-        height: 500px;
+        width: 200px;
+        height: 200px;
         border: 5px solid black;
     }
     
     .item1,
     .item2 {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
         position: relative;
     }
     
     .item1 {
-        background-color: red;
+        background-color: rgb(238, 174, 135);
         top: 0;
         left: 0;
     }
     
     .item2 {
-        background-color: blue;
+        background-color: rgb(213, 218, 148);
         top: 0;
         right: 0;
+    }
+    
+    li {
+        background-color: gray;
+        padding: 2px;
+        text-transform: capitalize;
+        list-style-position: outside;
+        text-align: center;
+    }
+    
+    ol {
+        background-color: black;
+        color: white;
+    }
+    
+    li:hover {
+        color: red;
+    }
+    
+    table {
+        text-transform: capitalize;
+        border: 2px solid black;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        text-indent: 20px;
+        width: 100%;
+    }
+    
+    h1 {
+        background-color: gray;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: white;
+    }
+    
+    table td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table th {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table tr:hover {
+        background-color: red;
     }
 </style>
