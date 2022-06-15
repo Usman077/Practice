@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
-    <h1>Practice</h1>
+    <h1>Payment</h1>
     <form action="">
         <fieldset>
             <legend>
-                <h1>form</h1>
+                <h1>user information</h1>
             </legend>
             <label for="name">Name</label>
             <input type="text" name="name" id="name">
@@ -31,28 +32,29 @@
             <p>male <input type="radio" name="gender" value="male"></p>
             <p> female <input type="radio" name="gender" value="female"></p>
             <p>address</p> <textarea name="address" id="" cols="30" rows="10"></textarea>
-        </fieldset>
-        <label for="imagefile">chosse your file for image</label>
-        <input type="file" name="imagefile">
 
-        <br><br>
+            <label for="imagefile">chosse your file for image</label>
+            <input type="file" name="imagefile">
 
-        <label for="payment information">Payment Information</label>
-        <select name="cardtyp" id=""> cardtype
+            <br><br>
+
+            <h1>Payment information</h1>
+            <select name="cardtyp" id=""> cardtype
                 <option value="visa">visa</option>
                 <option value="master">master</option>
                 <option value="american express">american express</option>
             </select>
-        <lebal for="cardnumber">Card Number</label>
-            <input type="number" name="cardnumber" id="cardnumber">
-            <label for="expdate">Expiration Date</label>
-            <input type="date" name="expdate" id="expdate">
-            <label for="cvv">cvv</label>
-            <input type="password" name="cvv">
-            <label for="submit">submit</label>
-            <input type="submit" name="submit" id="submit">
-            <label for="reset">reset</label>
-            <input type="reset" name="reset" id="reset">
+            <lebal for="cardnumber">Card Number</label>
+                <input type="number" name="cardnumber" id="cardnumber">
+                <label for="expdate">Expiration Date</label>
+                <input type="date" name="expdate" id="expdate">
+                <label for="cvv">cvv</label>
+                <input type="password" name="cvv">
+                <label for="submit">submit</label>
+                <input type="submit" name="submit" id="submit">
+                <label for="reset">reset</label>
+                <input type="reset" name="reset" id="reset">
+        </fieldset>
     </form>
 </body>
 
