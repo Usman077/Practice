@@ -11,6 +11,7 @@
 
 <body>
     <h1>Payment</h1>
+    <hr>
     <form action="">
         <fieldset>
             <legend>
@@ -20,40 +21,43 @@
             <input type="text" name="name" id="name">
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address">
             <label for="phone">Phone</label>
             <input type="text" name="phone" id="phone">
             <br><br>
             <label for="password">Password</label>
             <input type="password" name="password">
+            <fieldset class="gender">
+                <legend>
+                    <label for="gender"> gender</label></legend>
+                male <input type="radio" name="gender" value="male"> female <input type="radio" name="gender" value="female">
+            </fieldset>
             <br>
-            <label for="gender"> gender</label>
-            <p>male <input type="radio" name="gender" value="male"></p>
-            <p> female <input type="radio" name="gender" value="female"></p>
+            <label for="imagefile">profile-pic </label>
+            <input type="file" name="imagefile">
             <p>address</p> <textarea name="address" id="" cols="30" rows="10"></textarea>
 
-            <label for="imagefile">chosse your file for image</label>
-            <input type="file" name="imagefile">
 
-            <br><br>
+            <hr>
+
 
             <h1>Payment information</h1>
-            <select name="cardtyp" id=""> cardtype
+            <lebal for="cardtype">Card type</label>
+                <select name="cardtyp" id=""> cardtype
                 <option value="visa">visa</option>
                 <option value="master">master</option>
                 <option value="american express">american express</option>
+
             </select>
-            <lebal for="cardnumber">Card Number</label>
-                <input type="number" name="cardnumber" id="cardnumber">
-                <label for="expdate">Expiration Date</label>
-                <input type="date" name="expdate" id="expdate">
-                <label for="cvv">cvv</label>
-                <input type="password" name="cvv">
-                <label for="submit">submit</label>
-                <input type="submit" name="submit" id="submit">
-                <label for="reset">reset</label>
-                <input type="reset" name="reset" id="reset">
+                <lebal for="cardnumber">Card Number</label>
+                    <input type="number" name="cardnumber" id="cardnumber">
+                    <label for="expdate">Expiration Date</label>
+                    <input type="date" name="expdate" id="expdate">
+                    <label for="cvv">cvv</label>
+                    <input type="password" name="cvv">
+
+                    <input type="submit" name="submit" id="submit">
+
+                    <input type="reset" name="reset" id="reset">
         </fieldset>
     </form>
 </body>
