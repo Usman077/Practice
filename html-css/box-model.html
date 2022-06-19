@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media (max-width: 480px),
+    (orinetation: portrait) {
+        .size1 {
+            width: 100%;
+            color: greenyellow;
+            font-size: 20px;
+            z-index: 5;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+        }
+    }
+    
+    .layer1 {
+        z-index: 2;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .layer2 {
+        z-index: 1;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+    
+    .layer3 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    .layer1:hover {
+        background-color: rgb(255, 85, 0);
+        z-index: 3;
+    }
+    
+    .layer2:hover {
+        background-color: rgb(38, 0, 255);
+        z-index: 4;
+    }
+    
+    .layer3:hover {
+        background-color: rgb(0, 255, 34);
+        z-index: 5;
+    }
+    
+    .size1 {
+        position: absolute;
+        bottom: 400px;
+        box-sizing: content-box;
+        background-color: aqua;
+        color: black;
+        width: 200px;
+        z-index: 4;
+    }
+    
+    .size2 {
+        box-sizing: border-box;
+        background-color: yellow;
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div class="layer1"></div>
+    <div class="layer2"></div>
+    <div class="layer3"></div>
+    <br>
+    <div class="size1">
+        <p>there are some people to learn the things that is very important and the things is also very important</p>
+    </div>
+    <div class="size2"></div>
+    <div class="size3"></div>
+</body>
+
+</html>
