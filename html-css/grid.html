@@ -10,18 +10,45 @@
 
 <body>
     <div class="con">
-        <div class="grid"></div>
-        <div class="grid"></div>
-        <div class="grid"></div>
-        <div class="grid"></div>
+        <div class="grid">1</div>
+        <div class="grid" id="item2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est beatae dignissimos modi veniam accusantium molestias unde repellendus recusandae atque! Laborum culpa sequi fuga ad accusantium animi quam dolorem esse.</div>
+        <div class="grid">
+            <div class="nested-item">nested 1</div>
+            <div class="nested-item">nested 2</div>
+            <div class="nested-item">nested 3</div></div>
+        <div class="grid">4</div>
     </div>
+
+
+
 
 </body>
 
 </html>
 <style>
+    .con {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-gap: 10px; 
+       grid-auto-rows: 100px;
+       grid-auto-columns: 70px;
+
+    }
+    
     .grid {
-        grid-auto-flow: column;
+        display: grid;
+      
+        border: 2px solid blueviolet;
         background-color: aqua;
+}
+     #item2 {
+       grid-row-start:2;
+         grid-row-end:4;
+    }
+    .nested-item {
+        background-color: rgb(220, 210, 210);
+        border: 2px solid blueviolet;
+        padding: 4px;
+        border-radius: 10px;
     }
 </style>
