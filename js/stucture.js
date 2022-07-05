@@ -41,12 +41,44 @@ console.log(num);
 // shift is used to remove element in array in the begining
 num.shift();
 console.log(num);
-
+ // slice is used to remove element in array in the begining and last
+ // slice(start, end)
+ num.slice(0,3);
+    console.log(num);
 num[0] = 100;
+  // concat is used to add element in array in the begining and last
+    // concat(array)
+    num.concat([100,200,300]);
+    console.log(num);
+// indexOf is used to find index of element in array
+// join is used to convert array to string
+ let students = ["w", "x", "y", "z"];
+    console.log(students.indexOf("y"));
+    console.log(students.join("-"));
+
 let names = ["ali", "veli", "ayse", "hero", "josph"];
 console.log(names.indexOf("ali"));
 console.log(names.lastIndexOf("hero"));
 //find is used to find element in array
+// arow function is 
 let found = num.find(Element => Element == 5);
 console.log(found);
+ // filter is used to filter element in array
+ // map is used to map element in array
  
+ let city =[{
+    name: "karachi",
+    poplation: "20000",
+  }
+  ,{ name: "lahore",
+    poplation: "30000",
+  }
+  ,{ name: "islamabad",
+    poplation: "40000",
+  }
+  ,{ name: "peshawar",
+    poplation: "50000",
+  }
+];
+console.log(city.filter(city => city.poplation > "30000"))
+console.log(city.map(city => city.poplation * 2))
