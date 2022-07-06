@@ -82,3 +82,4 @@ console.log(found);
 ];
 console.log(city.filter(city => city.poplation > "30000"))
 console.log(city.map(city => city.poplation * 2))
+// lexical scope is used to define variable in function 

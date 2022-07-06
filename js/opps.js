@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
+
+
     // functions are first class citizens in js
     // function declaration
     function add(a,b){
@@ -94,5 +84,4 @@ let chair = new product1('chair',100);
 //     this._name = value;
 // }
 
-</script>
-</html>
+
